@@ -1,3 +1,4 @@
+// Import required modules
 const router = require("express").Router();
 const {
   createUser,
@@ -7,10 +8,10 @@ const {
   login,
 } = require("../../controllers/user-controller");
 
-// import middleware
+// Import middleware for authentication
 const { authMiddleware } = require("../../utils/auth");
 
-// put authMiddleware anywhere we need to send a token for verification of user
+// Define routes and specify the HTTP methods and corresponding controller functions
 router.route("/").post(createUser).put(authMiddleware, saveBook);
 
 router.route("/login").post(login);
@@ -19,4 +20,5 @@ router.route("/me").get(authMiddleware, getSingleUser);
 
 router.route("/books/:bookId").delete(authMiddleware, deleteBook);
 
+// Export the router for use in the application
 module.exports = router;

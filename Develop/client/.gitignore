@@ -1,24 +1,24 @@
 # Logs
 logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+*.log              # Ignore log files with any extension
+npm-debug.log*     # Ignore npm debug log files
+yarn-debug.log*    # Ignore yarn debug log files
+yarn-error.log*    # Ignore yarn error log files
+pnpm-debug.log*    # Ignore pnpm debug log files
+lerna-debug.log*   # Ignore lerna debug log files
 
-node_modules
-dist
-dist-ssr
-*.local
+node_modules        # Ignore the entire "node_modules" directory
+dist               # Ignore a directory named "dist"
+dist-ssr           # Ignore a directory named "dist-ssr"
+*.local            # Ignore files with the ".local" extension
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.vscode/*            # Ignore the entire ".vscode" directory
+!.vscode/extensions.json  # Except for the "extensions.json" file within ".vscode"
+.idea              # Ignore the entire ".idea" directory
+.DS_Store          # Ignore macOS specific .DS_Store files
+*.suo              # Ignore Visual Studio solution user options file
+*.ntvs*            # Ignore Visual Studio Node.js Tools options
+*.njsproj          # Ignore Visual Studio Node.js project files
+*.sln              # Ignore Visual Studio solution files
+*.sw?              # Ignore swap files (e.g., .swp, .swo)

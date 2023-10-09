@@ -1,17 +1,20 @@
+/* Global font family for the entire body */
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif; /* Sets the font to 'Rubik' and falls back to sans-serif fonts */
 }
 
+/* Font family for heading elements (h1, h2, h3, h4, h5, h6) */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Rubik Mono One", sans-serif; /* Sets the font to 'Rubik Mono One' and falls back to sans-serif fonts */
 }
 
+/* Styling for elements with class 'small' */
 .small {
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 300; /* Sets the font weight to 300 (lighter than normal) */
+  font-style: italic; /* Sets the font style to italic */
 }
